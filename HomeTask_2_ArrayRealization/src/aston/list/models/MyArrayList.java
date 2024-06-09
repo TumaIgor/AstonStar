@@ -112,6 +112,18 @@ public class MyArrayList<E> implements RealizeList<E> {
 		E victim = (E) elements[index];
 		elements[index] = element;
 		return victim;
+	}
+
+	@Override
+	public Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
 	} 
 
 }
