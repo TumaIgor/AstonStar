@@ -23,7 +23,7 @@ class ListTest {
 		System.out.println(list.get(4));
 		int index = list.indexOf(null);
 		System.out.println(index);
-		index = list.indexOf(5);
+		index = list.indexOf(5); 
 		System.out.println(index);
 		System.out.println(list.contains(12));
 		System.out.println("==================");

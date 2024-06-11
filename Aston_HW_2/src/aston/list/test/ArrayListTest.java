@@ -33,7 +33,10 @@ class ArrayListTest {
 		System.out.println(list.size());
 		System.out.println(num);
 		System.out.println("==================");
-		
+		System.out.println(list.size());
+		System.out.println(list.get(1));
+		System.out.println(list.size());
+		System.out.println("==================");
 	
 		
 	}
