@@ -1,18 +1,18 @@
-package aston.binaryserch;
+package binaryserch;
 
 public class BubbleSort {
     public static void bubbleSort(int[] array) {
         int n = array.length;
         boolean swapped;
         // Проходим через все числа
-        do {
+        do { 
             swapped = false;
             for (int i = 1; i < n; i++) {
                 // Если предыдущее число больше текущего, меняем их местами
                 if (array[i - 1] > array[i]) {
                     // Меняем элементы
                     int temp = array[i - 1];
-                    array[i - 1] = array[i];
+                    array[i - 1] = array[i]; 
                     array[i] = temp;
                     // Устанавливаем swapped в true для следующего прохода
                     swapped = true;
@@ -22,7 +22,7 @@ public class BubbleSort {
         } while (swapped);
     }
 
-    public static void quickSort(int[] array, int low, int hight) {
+    public static void quickSort( int[] array, int low, int hight) { 
     	if(low < hight) {
     		int pi = partition(array, low, hight);
     		quickSort(array, low, pi - 1);
@@ -56,8 +56,8 @@ public class BubbleSort {
     
     
     public static void main(String[] args) {
-        int[] myArray = {64, 34, 25, 12, 22, 11, 90};
-        int[] myArray1 = {54, 1, 25, 12, 44, 12, 9, 112, 7};
+        int[] myArray = {64, 34, 25, 12, 22, 11, 90, 6};
+        int[] myArray1 = {54, 1, 25, 12, 4, 44, 12, 9, 112, 7};
         
         System.out.println("Original array:");
         for (int value : myArray) {
